@@ -1,0 +1,513 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f0f0, #007bff);
+    color: #333;
+}
+
+/* Запрет на выделение текста */
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.body-no-scroll {
+    overflow: hidden;
+    /* Отключает прокрутку на странице */
+    height: 100%;
+    /* Задаёт фиксированную высоту */
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Шапка */
+header {
+    background-color: #007bff;
+    /* Измените на желаемый цвет */
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* Убедитесь, что шапка всегда наверху */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Небольшая тень для выделения */
+}
+
+header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 5px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Основное содержимое */
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Карточки */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.main-container {
+    padding: 30px;
+}
+
+/* HEADING */
+
+.heading {
+    text-align: center;
+}
+
+.heading__title {
+    font-weight: 600;
+}
+
+.heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+.heading__link {
+    text-decoration: none;
+}
+
+.heading__credits .heading__link {
+    color: inherit;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.card__icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card__title {
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card__apply {
+    margin-top: auto;
+}
+
+.card__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.card__link:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+}
+
+/* CARD BACKGROUNDS */
+
+.card-1 {
+    background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+    background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+    background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+    .cards {
+        justify-content: center;
+    }
+}
+
+/* Формы обратной связи */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Добавляет padding в общую ширину и высоту элемента, обеспечивая более предсказуемое расположение */
+}
+
+.form-group textarea {
+    resize: vertical;
+    /* Позволяет пользователю изменять размер только по вертикали */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*Стили для Главной секции*/
+#welcome {
+    background-color: #e8effc;
+    padding: 40px 0;
+}
+
+#welcome>.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+#welcome>h2 {
+    color: #2a2f45;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#welcome>p {
+    color: #4a4f5c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.features {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.features h3 {
+    color: #2a2f45;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    padding: 5px 0;
+    color: #4a4f5c;
+}
+
+/* Стили для секции FAQ */
+.faq-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    color: #333;
+    background: linear-gradient(135deg, #007bff, #00bfff);
+    border-radius: 5px 5px 0 0;
+}
+
+.faq-question::after {
+    content: '\002B';
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    color: #007bff;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    color: #666;
+    background: linear-gradient(135deg, #c4d8f7, #b5ccf6);
+    border-top: none;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 0 0 5px 5px;
+}
+
+.faq-item:last-child .faq-answer {
+    border-radius: 0 0 5px 5px;
+}
+
+/* Анимация для ответов */
+.faq-answer {
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    height: 0;
+}
+
+.faq-answer.active {
+    height: auto;
+    /* Это значение будет переопределено в JavaScript */
+    display: block;
+}
+
+
+/* Отступы и выравнивание для контейнера формы */
+#contact .container {
+    max-width: 600px;
+    /* Лимитирует максимальную ширину формы для лучшей читаемости на больших экранах */
+    margin: auto;
+}
+
+/* Футер */
+footer {
+    background: linear-gradient(135deg, #111111, #333333);
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-section h3,
+.footer-section a,
+.footer-section p {
+    color: #ffffff;
+    /* Убедитесь, что текст виден на фоне */
+}
+
+/* Маркер to-up */
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Адаптивность и кастомные стили */
+@media (min-width: 768px) {
+    .container {
+        padding: 20px 40px;
+    }
+
+    nav ul li {
+        margin: 0 25px;
+    }
+
+    .footer-section {
+        display: inline-block;
+        vertical-align: top;
+        width: 23%;
+        margin: 0 1%;
+        text-align: left;
+    }
+
+    .blog-post img {
+        height: 150px;
+    }
+
+    #teachersList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container,
+    .blog-posts {
+        padding: 10px;
+    }
+
+    .blog-post-title {
+        font-size: 18px;
+    }
+
+    .blog-post-description {
+        font-size: 14px;
+    }
+
+    #teachersList {
+        grid-template-columns: 1fr;
+    }
+}
+
+#courses,
+#blog,
+#news {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.course-list,
+.news-list,
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-item,
+.teacher-item,
+.news-item,
+.blog-post {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Основной стиль скроллбара */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 1px;
+}
+
+/* Стиль трека (дорожки), по которой движется скроллбар */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Стиль ручки скроллбара */
+::-webkit-scrollbar-thumb {
+    background: rgba(50, 50, 250, 0.8);
+    border-radius: 10px;
+}
+
+/* Стиль ручки скроллбара при наведении */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(50, 50, 250, 1);
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок по информатике</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/lesson.css">
+</head>
+<body>
+    <div class="container">
+        <div id="content">
+            <h1 id="lesson-title">Основы программирования</h1>
+            <div id="lesson-content">
+                <p>Программирование - это процесс создания инструкций, которые компьютер может выполнить.</p>
+                <p>Основные понятия в программировании:</p>
+                <ul>
+                    <li>Переменные</li>
+                    <li>Условия</li>
+                    <li>Циклы</li>
+                    <li>Функции</li>
+                </ul>
+                <p>Пример кода на языке JavaScript:</p>
+                <pre><code>var x = 10;
+if (x > 5) {
+    console.log("x больше 5");
+} else {
+    console.log("x меньше или равно 5");
+}</code></pre>
+            </div>
+            <button id="test-button" class="action-button">Проверить знания</button>
+            <button id="back-button" style="display: block;" onclick="goBack()">Назад</button>
+            <div id="quiz-container" style="display: none;"></div>
+            <div id="question-container"></div>
+            <div id="navigation-buttons"></div>
+
+        </div>
+    </div>
+    <script src="../../scripts/lesson.js"></script>
+</body>
+</html>

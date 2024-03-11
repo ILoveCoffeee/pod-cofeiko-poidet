@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Запрет на выделение текста */
+body {
+    -webkit-touch-callout: none; /* Отключаем меню вызова при долгом нажатии */
+    -webkit-user-select: none; /* Запрещаем выделение текста для WebKit */
+    -khtml-user-select: none; /* Запрещаем выделение текста для Konqueror */
+    -moz-user-select: none; /* Запрещаем выделение текста для Mozilla Firefox */
+    -ms-user-select: none; /* Запрещаем выделение текста для Internet Explorer/Edge */
+    user-select: none; /* Запрещаем выделение текста для всех остальных браузеров */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button#test-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.quiz-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    display: inline-block; /* Расположение в строчку */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-right: 10px; /* Дополнительный отступ между кнопками */
+}
+
+.quiz-button:last-child {
+    margin-right: 0; /* Убираем отступ у последней кнопки */
+}
+
+.quiz-button:hover {
+    background-color: #f0f0f0;
+}
+
+
+button#back-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+button#back-button:hover {
+    border-color: #888;
+    background-color: #f0f0f0;
+}

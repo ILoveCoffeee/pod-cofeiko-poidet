@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преподаватели</title>
+    <link rel="stylesheet" href="../styles/teachers.css">
+    <script src="../scripts/teacher.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="../index.html"><img src="../images/general/logo.png" alt="Логотип"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="#welcome">Главная</a></li>
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#teachers">Преподаватели</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="card">
+          <img src="../images/teachers/photo_2024-02-20_22-26-56.jpg" alt="Иван Алексеев">
+          <div class="card-content">
+            <h2>Иван Алексеев</h2>
+            <p>Специалист по программированию с 10-летним опытом. Эксперт в области Python и алгоритмов.</p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/teachers/photo_2024-02-20_22-56-53.jpg" alt="Мария Семенова">
+          <div class="card-content">
+            <h2>Мария Семенова</h2>
+            <p>Мария — ведущий разработчик с более чем 12-летним опытом работы в области мобильных и веб-технологий.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/teachers/photo_2024-02-20_22-56-57.jpg" alt="Алексей Петров">
+          <div class="card-content">
+            <h2>Алексей Петров</h2>
+            <p>Эксперт по искусственному интеллекту и машинному обучению, Алексей ведет курсы по передовым технологиям.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/teachers/photo_2024-02-20_22-56-56.jpg" alt="Екатерина Волкова">
+          <div class="card-content">
+            <h2>Екатерина Волкова</h2>
+            <p>Специалист по базам данных и системам управления базами данных, Екатерина обладает глубокими знаниями в области SQL и NoSQL.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/teachers/photo_2024-02-20_22-58-59 (2).jpg" alt="Дмитрий Новиков">
+          <div class="card-content">
+            <h2>Дмитрий Новиков</h2>
+            <p>Дмитрий — специалист по кибербезопасности с более чем 15-летним опытом. Он помогает студентам разобраться в тонкостях защиты информации.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/teachers/photo_2024-02-20_22-56-54.jpg" alt="Ольга Кузнецова">
+          <div class="card-content">
+            <h2>Ольга Кузнецова</h2>
+            <p>Дизайнер интерфейсов, Ольга преподает курсы по UI/UX дизайну, помогая создавать интуитивно понятные и красивые веб-сайты и приложения.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/teachers/photo_2024-02-20_22-58-59.jpg" alt="Антон Сергеев">
+          <div class="card-content">
+            <h2>Антон Сергеев</h2>
+            <p>Антон ведет курсы по разработке на JavaScript. Он делится современными подходами к созданию динамичных веб-приложений.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="../images/teachers/1.jpg" alt="Антон Сергеев">
+            <div class="card-content">
+              <h2>Кирилл Аристархов</h2>
+              <p>Кирилл ведет курсы по верстке сайтов HTML. Также он занимается стилизацией страниц с помощью CSS.</p>
+            </div>
+        </div>
+    </main>
+    <button id="askQuestionBtn" onclick="openQuestionForm()">Задать вопрос</button>
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>О сайте</h3>
+                <p>Этот сайт предоставляет образовательные курсы по информатике для школьников.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#welcome">Главная</a></li>
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#teachers">Преподаватели</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: info@informatics-school.ru</p>
+                <p>Телефон: +7 (495) 123-45-67</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Модальное окно для вопросов -->
+    <div id="questionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h2>Задайте вопрос преподавателю</h2>
+            <form id="questionForm">
+                <div class="form-group">
+                    <label for="teacherSelect">Выберите преподавателя:</label>
+                    <select id="teacherSelect" name="teacherName" required>
+                        <option value="" disabled selected>Выберите преподавателя</option>
+                        <option value="Иван Алексеев">Иван Алексеев</option>
+                        <option value="Мария Семенова">Мария Семенова</option>
+                        <option value="Алексей Петров">Алексей Петров</option>
+                        <option value="Екатерина Волкова">Екатерина Волкова</option>
+                        <option value="Екатерина Волкова">Дмитрий Новиков</option>
+                        <option value="Екатерина Волкова">Ольга Кузнецова</option>
+                        <option value="Екатерина Волкова">Антон Сергеев</option>
+                        <option value="Екатерина Волкова">Кирилл Аристархов</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Ваш email:</label>
+                    <input type="email" id="userEmail" name="userEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="userQuestion">Ваш вопрос:</label>
+                    <textarea id="userQuestion" name="userQuestion" rows="4" required></textarea>
+                </div>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>  
+</body>
+</html>
