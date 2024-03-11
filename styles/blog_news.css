@@ -1,0 +1,280 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Запрет на выделение текста */
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img {
+    pointer-events: none; /* Запрещает действия с изображениями, такие как клик и перетаскивание */
+    user-select: none; /* Запрещает выделение изображений */
+}
+
+.body-no-scroll {
+    overflow: hidden; /* Отключает прокрутку на странице */
+    height: 100%; /* Задаёт фиксированную высоту */
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Шапка */
+header {
+    background-color: #007bff; /* Измените на желаемый цвет */
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Убедитесь, что шапка всегда наверху */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Небольшая тень для выделения */
+}
+
+header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 5px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Основное содержимое */
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Карусель с новостями */
+.news-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f0f0f0;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 15;
+}
+
+.carousel-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.carousel-indicator.active {
+    background-color: #666;
+}
+
+.carousel-caption h3 {
+    color: #ffffff; /* Ярко-белый цвет для заголовков */
+    margin: 0 0 10px; /* Добавляем нижний отступ к заголовку */
+}
+
+.carousel-caption p {
+    color: #cccccc; /* Светло-серый цвет для абзацев */
+    font-size: 16px; /* Увеличиваем размер шрифта для лучшей читаемости */
+}
+
+
+
+/* Стили для блога */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.blog-post {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.blog-post-content {
+    padding: 15px;
+}
+
+.blog-post-title {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.blog-post-description {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Ссылки внутри блога для улучшения навигации */
+.blog-post a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность и кастомные стили */
+@media (min-width: 768px) {
+    .container {
+        padding: 20px 40px;
+    }
+
+    nav ul li {
+        margin: 0 25px;
+    }
+
+    .footer-section {
+        display: inline-block;
+        vertical-align: top;
+        width: 23%;
+        margin: 0 1%;
+        text-align: left;
+    }
+
+    .blog-post img {
+        height: 150px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container, .blog-posts {
+        padding: 10px;
+    }
+
+    .blog-post-title {
+        font-size: 18px;
+    }
+
+    .blog-post-description {
+        font-size: 14px; 
+    }
+
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: #ffffff; /* Светлый текст на темном фоне */
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-section h3, .footer-section a, .footer-section p {
+    color: #ffffff; /* Убедитесь, что текст виден на фоне */
+}
